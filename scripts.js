@@ -1,11 +1,11 @@
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js" // firebase app library
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js" // firebase database library
-import { FIREBASE_DB_URL } from "../firebaseURL.js"
+
 
 //firebase settings
 const appSettings = {
-    databaseURL: FIREBASE_DB_URL // my firebase server url
+    databaseURL: "https://testproj-5842f-default-rtdb.firebaseio.com/" // my firebase server url
 }
 const app = initializeApp(appSettings);
 const database = getDatabase(app);  //retrieve database
